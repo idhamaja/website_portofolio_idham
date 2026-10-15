@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idham Irama Permana — Portfolio</title>
+<meta name="description" content="Mobile Developer, Full Stack Developer & System Analyst">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#profile" class="logo">Idham IP</a>
+  <nav>
+    <a href="#profile" data-i18n="nav_profile">Profil</a>
+    <a href="#skills" data-i18n="nav_skills">Keahlian</a>
+    <a href="#projects" data-i18n="nav_projects">Proyek</a>
+    <a href="#contact" data-i18n="nav_contact">Kontak</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language">
+    <button data-lang="id" class="active">ID</button>
+    <button data-lang="en">EN</button>
+  </div>
+</header>
+
+<main>
+  <!-- PROFILE -->
+  <section id="profile" class="hero">
+    <div class="hero-text">
+      <p class="role" data-i18n="role">Mobile Developer · Full Stack Developer · System Analyst</p>
+      <h1>Idham Irama<br>Permana</h1>
+      <p class="bio" data-i18n="bio">Sarjana Teknik Informatika (IPK 3.65) yang membangun aplikasi mobile dengan Flutter dan React Native, serta web full-stack dengan Laravel dan React JS. Pengalaman dari startup teknologi hingga perusahaan ritel besar.</p>
+      <div class="facts">
+        <div><strong>3.65</strong><span data-i18n="fact_gpa">IPK S.Kom</span></div>
+        <div><strong>6</strong><span data-i18n="fact_roles">Peran profesional</span></div>
+        <div><strong>446</strong><span>TOEFL ITP</span></div>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="#projects" data-i18n="cta_projects">Lihat proyek</a>
+        <a class="btn" href="#contact" data-i18n="cta_contact">Hubungi saya</a>
+      </div>
+    </div>
+    <figure class="photo">
+      <img src="assets/foto.png" alt="Foto Idham Irama Permana">
+    </figure>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 data-i18n="skills_title">Keahlian</h2>
+    <div class="skill-list">
+      <div class="skill-row"><h3 data-i18n="sk_mobile">Mobile</h3><ul><li>Flutter (Dart)</li><li>React Native</li><li>Java Native</li></ul></div>
+      <div class="skill-row"><h3>Frontend</h3><ul><li>React JS</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Laravel Blade</li></ul></div>
+      <div class="skill-row"><h3>Backend</h3><ul><li>Laravel 12</li><li>RESTful API</li><li>GraphQL</li><li>JWT</li><li>Node JS</li><li>Express JS</li></ul></div>
+      <div class="skill-row"><h3 data-i18n="sk_db">Database</h3><ul><li>MySQL</li><li>MongoDB</li><li>Firebase</li></ul></div>
+      <div class="skill-row"><h3 data-i18n="sk_sa">Analisis Sistem</h3><ul><li>SRS</li><li>ERD</li><li>DFD</li><li>Use Case</li><li>BPMN</li><li>UAT</li></ul></div>
+      <div class="skill-row"><h3>UI/UX</h3><ul><li>Figma</li><li>Adobe XD</li><li>Illustrator</li><li>Photoshop</li><li>Proto.io</li></ul></div>
+    </div>
+    <p class="certs"><strong data-i18n="cert_label">Sertifikasi:</strong> <span data-i18n="certs">Junior Web Programmer, CCNA, BNSP Teknologi Informasi, TOEFL ITP 446</span></p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 data-i18n="projects_title">Proyek</h2>
+    <p class="hint" data-i18n="projects_hint">Klik proyek untuk melihat detailnya.</p>
+    <div class="projects">
+      <details open>
+        <summary><span>E-Parking Mobile</span><em>Flutter · Laravel</em></summary>
+        <p data-i18n="p1">Sistem manajemen parkir berbasis mobile. Alur sistem dirancang di Figma, backend Laravel sebagai REST API server, lengkap dengan SRS dan Data Flow Diagram.</p>
+      </details>
+      <details>
+        <summary><span>RFID UHF Tag Scanner</span><em>Flutter · Java Native</em></summary>
+        <p data-i18n="p2">Aplikasi manajemen aset yang membaca tag RFID UHF. Dibangun dengan Flutter dan terintegrasi dengan Java Native untuk akses perangkat keras.</p>
+      </details>
+      <details>
+        <summary><span data-i18n="p3_title">Aplikasi Pembayaran SPP</span><em>Flutter</em></summary>
+        <p data-i18n="p3">Sistem pembayaran SPP untuk sekolah, dari analisis kebutuhan, ERD, BPMN, dan UI/UX sampai deployment, dengan pengujian UAT bersama staf sekolah.</p>
+      </details>
+      <details>
+        <summary><span>Pizza Hut Landing Page</span><em>React JS · Laravel</em></summary>
+        <p data-i18n="p4">Website landing page dengan desain dari Figma dan Adobe XD, data dari API RESTful/GraphQL, plus pemetaan proses bisnis promosi, menu digital, dan pesan online.</p>
+      </details>
+      <details>
+        <summary><span>E-Commerce Mobile App</span><em>React Native · Stripe</em></summary>
+        <p data-i18n="p5">Membantu membangun aplikasi e-commerce dengan pembayaran Stripe, pelacakan kurir, dan navigasi yang intuitif.</p>
+      </details>
+      <details>
+        <summary><span>Disaster Recovery Design</span><em data-i18n="p6_tag">Infrastruktur</em></summary>
+        <p data-i18n="p6">Rancangan solusi Disaster Recovery dengan backup data real-time untuk menjaga kelangsungan bisnis dan mencegah kehilangan data.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 data-i18n="contact_title">Kontak</h2>
+    <p class="hint" data-i18n="contact_hint">Terbuka untuk peluang kerja dan kolaborasi.</p>
+    <ul class="contact-list">
+      <li><span data-i18n="c_email">Email</span><a href="mailto:idham16ip@gmail.com">idham16ip@gmail.com</a></li>
+      <li><span data-i18n="c_phone">Telepon</span><a href="tel:+6285213362488">0852-1336-2488</a></li>
+      <li><span data-i18n="c_loc">Lokasi</span><b data-i18n="c_loc_val">Bogor, Jawa Barat</b></li>
+      <li><span>GitHub</span><a href="https://github.com/idhamaja?tab=repositories" target="_blank" rel="noopener">github.com/idhamaja</a></li>
+      <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/idham-irama-permana-5776a5201/" target="_blank" rel="noopener">Idham Irama Permana</a></li>
+    </ul>
+    <button class="btn primary" id="copyEmail" data-i18n="copy_email">Salin email</button>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Idham Irama Permana</footer>
+<script src="script.js"></script>
+</body>
+</html>
